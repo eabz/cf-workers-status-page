@@ -5,7 +5,6 @@ import Head from 'flareact/head'
 import { getKVMonitors, useKeyPress } from '../src/functions/helpers'
 import config from '../config.yaml'
 import MonitorCard from '../src/components/monitorCard'
-import MonitorFilter from '../src/components/monitorFilter'
 import MonitorStatusHeader from '../src/components/monitorStatusHeader'
 import ThemeSwitcher from '../src/components/themeSwitcher'
 
@@ -42,7 +41,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   const slash = useKeyPress('/')
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Head>
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
@@ -71,11 +70,10 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
         <div className="flex flex-row justify-between items-center p-4">
           <div className="flex flex-row items-center">
             <img className="h-8 w-auto" src={config.settings.logo} />
-            <h1 className="ml-4 text-3xl">{config.settings.title}</h1>
+            <h1 className="ml-4 text-xl">{config.settings.title}</h1>
           </div>
           <div className="flex flex-row items-center">
             {typeof window !== 'undefined' && <ThemeSwitcher />}
-            <MonitorFilter active={slash} callback={filterByTerm} />
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
@@ -88,7 +86,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             />
           )
         })}
-        <div className="flex flex-row justify-between mt-4 text-sm">
+        <div className="flex flex-row justify-between my-4 text-sm">
           <div>
             Powered by{' '}
             <a href="https://workers.cloudflare.com/" target="_blank">
