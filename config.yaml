@@ -17,36 +17,36 @@ settings:
 monitors:
   - id: ETH
     name: Ethereum RPC Endpoint
-    url: 'https://eth-ski.llamanodes.com/health'
+    url: 'https://eth-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: ARB
     name: Arbitrum RPC Endpoint
-    url: 'https://arb-ski.llamanodes.com/health'
+    url: 'https://arbitrum-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: FTM
     name: Fantom RPC Endpoint
-    url: 'https://ftm-ski.llamanodes.com/health'
+    url: 'https://ftm-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: POLYGON
     name: Polygon RPC Endpoint
-    url: 'https://polygon-ski.llamanodes.com/health'
+    url: 'https://polygon-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200       
   - id: OPTIMISM
     name: Optimism RPC Endpoint
-    url: 'https://optimism-ski.llamanodes.com/health'
+    url: 'https://optimism-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200        
   - id: BSC
     name: BNB Chain RPC Endpoint
-    url: 'https://bsc-ski.llamanodes.com/health'
+    url: 'https://bsc-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200    
   - id: GNOSIS
     name: Gnosis Chain RPC Endpoint
-    url: 'https://gnosis-ski.llamanodes.com/health'
+    url: 'https://gnosis-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200        
