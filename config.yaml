@@ -27,7 +27,7 @@ monitors:
     expectStatus: 200
   - id: FTM
     name: Fantom RPC
-    url: 'https://ftm-ski.llamarpc.com/health'
+    url: 'https://fantom-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: POLYGON
