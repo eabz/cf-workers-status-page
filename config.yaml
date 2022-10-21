@@ -1,6 +1,6 @@
 settings:
   title: 'LlamaNodes Monitoring'
-  url: 'https://llamanodes.kindynos.workers.dev/' # used for Slack messages
+  url: 'https://llamanodes.kindynos.mx/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
