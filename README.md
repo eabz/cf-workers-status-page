@@ -126,45 +126,57 @@ WIP - Support for Durable Objects - Cloudflare's product for low-latency coordin
 There is also a managed version of this project, currently in beta. Feel free to check it out https://statusflare.com (https://twitter.com/statusflare_com).
 
 ## Running project locally
+
 **Requirements**
+
 - Linux or WSL
 - Yarn (`npm i -g yarn`)
 - Node 14+
 
 ### Steps to get server up and running
+
 **Install wrangler**
+
 ```
 npm i -g wrangler
 ```
 
 **Login With Wrangler to Cloudflare**
+
 ```
 wrangler login
 ```
 
 **Create your KV namespace in cloudflare**
+
 ```
 On the workers page navigate to KV, and create a namespace
 ```
 
 **Update your wrangler.toml with**
+
 ```
 kv-namespaces = [{binding="KV_STATUS_PAGE", id="<KV_ID>", preview_id="<KV_ID>"}]
 ```
+
 _Note: you may need to change `kv-namespaces` to `kv_namespaces`_
 
 **Install packages**
+
 ```
 yarn install
 ```
 
 **Create CSS**
+
 ```
 yarn run css
 ```
 
 **Run**
+
 ```
 yarn run dev
 ```
+
 _Note: If the styles do not come through try using `localhost:8787` instead of `localhost:8080`_

@@ -45,7 +45,9 @@ export default function ThemeSwitcher() {
     setDark(!darkmode)
   }
 
-  const buttonColor = darkmode ? 'bg-gray-700 focus:ring-gray-700' : 'bg-gray-200 focus:ring-gray-200'
+  const buttonColor = darkmode
+    ? 'bg-gray-700 focus:ring-gray-700'
+    : 'bg-gray-200 focus:ring-gray-200'
 
   return (
     <button

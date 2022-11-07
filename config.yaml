@@ -1,9 +1,9 @@
 settings:
   title: 'LlamaNodes Monitoring'
-  url: 'https://llamanodes.kindynos.mx/' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  url: 'https://llamanodes.kindynos.mx/'
+  logo: logo-192x192.png
+  daysInHistogram: 90
+  collectResponseTimes: true
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
@@ -12,41 +12,46 @@ settings:
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' incident(s)'
 
 monitors:
   - id: ETH
-    name: Ethereum RPC
+    name: Ethereum
     url: 'https://eth-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: ARB
-    name: Arbitrum RPC
+    name: Arbitrum
     url: 'https://arbitrum-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: FTM
-    name: Fantom RPC
+    name: Fantom
     url: 'https://fantom-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: POLYGON
-    name: Polygon RPC
+    name: Polygon
     url: 'https://polygon-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: OPTIMISM
-    name: Optimism RPC
+    name: Optimism
     url: 'https://optimism-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: BSC
-    name: BNB Chain RPC
+    name: BNB Chain
     url: 'https://bsc-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: GNOSIS
-    name: Gnosis Chain RPC
+    name: Gnosis Chain
     url: 'https://gnosis-ski.llamarpc.com/health'
+    method: GET
+    expectStatus: 200
+  - id: Goerli
+    name: Gnosis Chain
+    url: 'https://goerli-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
