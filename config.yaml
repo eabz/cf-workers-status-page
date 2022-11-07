@@ -50,8 +50,8 @@ monitors:
     url: 'https://gnosis-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
-  - id: Goerli
-    name: Gnosis Chain
+  - id: GOERLI
+    name: Goerli
     url: 'https://goerli-ski.llamarpc.com/health'
     method: GET
     expectStatus: 200
