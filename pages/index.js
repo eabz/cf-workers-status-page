@@ -41,7 +41,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   const slash = useKeyPress('/')
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <>
       <Head>
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
@@ -107,6 +107,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
