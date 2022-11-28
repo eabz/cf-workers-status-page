@@ -17,41 +17,41 @@ settings:
 monitors:
   - id: ETH
     name: Ethereum SKI
-    url: 'https://eth-ski.llamarpc.com/health'
+    url: 'https://eth.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: ARB
     name: Arbitrum SKI
-    url: 'https://arbitrum-ski.llamarpc.com/health'
+    url: 'https://arbitrum.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: FTM
     name: Fantom SKI
-    url: 'https://fantom-ski.llamarpc.com/health'
+    url: 'https://ftm.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: POLYGON
     name: Polygon SKI
-    url: 'https://polygon-ski.llamarpc.com/health'
+    url: 'https://polygon.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: OPTIMISM
     name: Optimism SKI
-    url: 'https://optimism-ski.llamarpc.com/health'
+    url: 'https://optimism.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: BSC
     name: BNB Chain SKI
-    url: 'https://bsc-ski.llamarpc.com/health'
+    url: 'https://bsc.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: GNOSIS
     name: Gnosis Chain SKI
-    url: 'https://gnosis-ski.llamarpc.com/health'
+    url: 'https://gnosis.llamarpc.com/health'
     method: GET
     expectStatus: 200
   - id: GOERLI
     name: Goerli SKI
-    url: 'https://goerli-ski.llamarpc.com/health'
+    url: 'https://goerli.llamarpc.com/health'
     method: GET
     expectStatus: 200
