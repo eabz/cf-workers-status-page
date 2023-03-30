@@ -20,38 +20,8 @@ monitors:
     url: 'https://eth.llamarpc.com/health'
     method: GET
     expectStatus: 200
-  - id: ARB
-    name: Arbitrum
-    url: 'https://arbitrum.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
-  - id: FTM
-    name: Fantom
-    url: 'https://ftm.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
   - id: POLYGON
     name: Polygon
     url: 'https://polygon.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
-  - id: OPTIMISM
-    name: Optimism
-    url: 'https://optimism.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
-  - id: BSC
-    name: BNB Chain
-    url: 'https://bsc.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
-  - id: GNOSIS
-    name: Gnosis Chain
-    url: 'https://gnosis.llamarpc.com/health'
-    method: GET
-    expectStatus: 200
-  - id: GOERLI
-    name: Goerli
-    url: 'https://goerli.llamarpc.com/health'
     method: GET
     expectStatus: 200
