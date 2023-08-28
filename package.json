@@ -14,9 +14,6 @@
     "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
-    "flareact": "^0.10.0",
-    "laco": "^1.2.1",
-    "laco-react": "^1.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
