@@ -1,6 +1,6 @@
 settings:
   title: 'LlamaNodes Monitoring'
-  url: 'https://llamanodes.kindynos.mx/'
+  url: 'https://status.llamanodes.com/'
   logo: logo-192x192.png
   daysInHistogram: 90
   collectResponseTimes: true
@@ -23,5 +23,10 @@ monitors:
   - id: POLYGON
     name: Polygon
     url: 'https://polygon.llamarpc.com/health'
+    method: GET
+    expectStatus: 200
+  - id: BNB
+    name: BNB Chain
+    url: 'https://binance.llamarpc.com/health'
     method: GET
     expectStatus: 200
